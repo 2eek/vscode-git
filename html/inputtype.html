@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <title>inputtype</title>
+    <style>
+        form{
+            width: 80%;
+            margin: 0 auto;
+        }
+        form ul{
+            list-style: none;
+        }
+        .inform label{
+            width: 150px;
+            display:inline-block;
+            padding: 3px;
+        }
+        legend{
+           font-weight: bold;
+        }
+        .star{
+                color: red;
+        }
+        fieldset{
+            margin: 10px;
+        }
+        .smalltext{
+            font-size: small;
+        }
+        .sub{
+            margin-left: 10px;
+        } 
+        
+    </style>
+</head>
+<body>
+    <form action="login.jsp" method="post" name="login">
+        
+        <fieldset>
+                    <label for="u_id">아이디:</label>
+                    <input type="text" id="u_id" name="u_id" placeholder="아이디 입력"autofocus required size="12">
+                
+                    <label for="u_pw">비밀번호:</label>
+                    <input type="password" id="u_pw" name="u_pw" maxlength="3" required size="12">
+                    <input type="submit" value="로그인">            
+        </fieldset>
+
+
+        <fieldset class="inform">
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="u_id">아이디 : <span class="star">*</span></label>
+                    <input type="text" id="u_id" name="u_id" autofocus required size="8">
+                </li>
+                <li>
+                    <label for="u_pw">비밀번호 : <span class="star">*</span></label>
+                    <input type="password" id="u_pw" name="u_pw" placeholder="비밀번호를 입력하시오"autofocus required>
+                </li>
+                <li>
+                    <label for="u_pw">비밀번호 확인 : <span class="star">*</span></label>
+                    <input type="password" id="u_pw" name="u_pw" placeholder="비밀번호를 입력하시오"autofocus required>
+                </li>
+                <li>
+                    <label for="u_name">이름 : <span class="star">*</span></label>
+                    <input type="text" id="u_name" name="u_name" autofocus required size="8">
+                </li>
+                <li>
+                    <label for="u_email">메일 주소 : <span class="star">*</span></label>
+                    <input type="email" id="u_email" name="u_email" autofocus required >
+                </li>
+                <li>
+                    <label for="u_home">홈페이지 주소 :</label>
+                    <input type="text" id="u_home" name="u_home" autofocus>
+                </li>
+                <li>
+                    <label for="u_home">우편번호:</label>
+                    <input type="text" id="u_home" name="u_home" autofocus required size="3"> - <input size="3">
+                    <button> 우편번호 검색</button>
+                </li>
+                <li>
+                    <label for="u_adress">집주소 :</label>
+                    <input type="text" id="u_adress" name="u_adress" autofocus size="40px">
+                </li>
+                <li>
+                    <label for="u_tel">연락처 :</label>
+                    <input type="tel" id="u_tel" name="u_tel" placeholder="-제외한 숫자만 입력하시오">
+                </li>
+                
+            </ul>
+        </fieldset>
+
+        <fieldset>     
+                    <label for="search">검색:</label>
+                    <input for="search" type="text" id="search" >
+                    <input type="submit" value="검색">
+                    <input type="submit" value="다시입력">
+        </fieldset>
+
+        <fieldset class="inform">
+            <legend>등록 정보</legend>
+                <ul>
+                    <li>
+                        <label for="u_home">참여인원<span class="smalltext">(최대10명):</span></label>
+                        <input type="text" id="u_home" name="u_home" autofocus min="1" value="1">
+                    </li>
+                    <li>
+                        <label for="u_home">지원물품<span class="smalltext">(1인당 5개)</span>:</label>
+                        <input type="text" id="u_home" name="u_home" autofocus min="1" value="1">
+                    </li>
+                    
+                    <li>
+                        <label for="u_slide"> 희망 단계<span class="smalltext">(상,중,하)</span>:</label>
+                        <input type="range" id="u_slide" name="u_slide" min="5" max="100" step="10" value="10" >
+                    </li>
+
+                    <li>
+                        <label for="u_file">첨부파일 선택 :</label>
+                        <input type="file" id="u_file" name="u_file">
+                    </li>
+
+                </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>수강 과목을 선택하세요<span class="smalltext">(1과목 선택 가능)</span></legend>
+                <ul>
+                    <li>
+                        <label for="u_color">색상선택</label>
+                        <input type="color" id="u_color" value="#00ff00">
+                    </li>
+                
+                    <li>
+                        <label for="u_home">신청 과목<span class="smalltext">(회화)</span></label>
+                        <label><input type="radio" name="grade" value="basic"checked>영어회화(초급)</label>
+                        <label><input type="radio" name="grade" value="muddle">영어회화(중급)</label>
+                        <label><input type="radio" name="grade" value="high">영어회화(고급)</label>
+                    </li>
+                    <li>
+                        <label for="u_home">관심분야는?<span class="smalltext">(다수선택)</span></label>
+                        <label><input type="checkbox" name="color1" value="red" checked>Twitter</label>
+                        <label><input type="checkbox" name="color2" value="green">Facebook</label>
+                        <label><input type="checkbox" name="color3" value="blue">instagram</label>
+                    </li>
+                </ul>
+        </fieldset>
+            
+            <input class="sub" type="submit" value="전송">
+            <input type="reset" value="취소">
+
+
+
+    </form>
+</body>
+</html>

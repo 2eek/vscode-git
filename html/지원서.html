@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제 개발자 지원서</title>
+    <!-- 커밋 테스트 -->
+    <style>
+
+        #container{
+            width: 500px;
+           border: 1px solid #000;
+            padding: 30px;
+            margin: 0 auto; 
+        }
+     
+        legend{
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        .inform{
+            width: 70px;
+            float: left;
+        }
+
+         fieldset ul {
+            list-style: none;
+         }
+         
+         fieldset li{
+            list-style: none;
+         }
+
+         fieldset {
+            border: none;
+         }
+
+
+    input:checked+span{
+        color:blue;
+    }
+    
+    </style>
+</head>
+<body>  
+     <div id="container">
+        <h1>국제 개발자 지원서</h1>
+            <p>HTML, CSS, javascript에 대한 기술적 이해와 겸험이 있는 분을 찾습니다.</p>
+            <hr>
+         <form action="login.jsp" method="post" name="login">
+
+        
+
+            <fieldset>
+                <legend>개인정보</legend>
+                <ul>
+                    <li>
+                        <label class="inform" for="u_name">이름</label>
+                        <input type="text" id="u_name" name="u_name" placeholder="공백 없이 입력하세요">
+                    </li>
+                    
+                    <li>
+                        <label class="inform" for="u_tel">연락처</label>
+                        <input type="tel" id="u_tel" name="u_tel"  >
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>지원분야</legend>
+                <ul>
+                    <li>
+                        <label></label><input type="radio" name="grade" value="basic"><span>웹 퍼블리싱</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="grade" value="muddle" checked><span>웹 애플리케이션 개발</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="grade" value="high"><span>개발 환경 개선</span></label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>지원 동기</legend>
+                <li>
+                    <label for="t_area"></label>
+                    <textarea cols="60" rows="5" id="t_area" name="t_area" placeholder="지원 동기 간략히 써 주세요" ></textarea>
+                </li>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="접수하기">
+                <input type="reset" value="다시쓰기">
+            </fieldset>
+    
+    </div>
+</form>
+</body>
+</html>

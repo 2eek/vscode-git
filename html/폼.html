@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폼</title>
+    <style>
+        form{
+            width: 500px;
+            margin: 0 auto;
+        }
+        form ul{
+            list-style: none;
+        }
+        form label{
+            width: 100px;
+           
+            float: left;/* ? */
+       
+
+         
+        }
+        legend{
+           font-weight: bold;
+        }
+        .center{
+            text-align: center;
+            border: none;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <form action="login.jsp" method="post" name="login">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="u_id">아이디</label>
+                    <input type="text" id="u_id" name="u_id" placeholder="아이디를 입력하시오"autofocus required>
+                </li>
+                <li>
+                    <label for="u_pw">비밀번호</label>
+                    <input type="password" id="u_pw" name="u_pw" maxlength="3" required >
+                </li>
+                <li>
+                    <label for="u_select">과일</label>
+                    <select id="u_select">
+                        <optgroup label="빨간색 과일">
+                            <option value="apple">사과</option>
+                            <option value="tomato" >토마토</option>
+                            <option value="cherry">체리</option>
+                        </optgroup>
+                        <optgroup label="노란색 과일">
+                            <option value="banana" selected>바나나</option>
+                            <option value="lemon">레몬</option>
+                        </optgroup>
+                    </select>
+                </li>
+
+                <li>
+                    <label for="u_list">영어과목</label>
+                    <input type="text" id="u_list" list="d_list">
+                    <datalist id="d_list">
+                        <option value="grammer" label="문법"></option>
+                        <option value="voca" label="어휘"></option>
+                        <option value="speak" label="회화"></option>
+                    </datalist>
+                </li>
+
+                <li>
+                    <label for="t_area">메모</label>
+                    <textarea cols="30" rows="5" id="t_area" name="t_area" placeholder="지원동기를 간략히 입력해주세요."></textarea>
+                </li>
+
+
+
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="u_name">이름</label>
+                    <input type="text" id="u_name" name="u_name" value="아무개"  >
+                </li>
+                <li>
+                    <label for="u_tel">연락처</label>
+                    <input type="tel" id="u_tel" name="u_tel" placeholder="-제외한 숫자만 입력하시오">
+                </li>
+                <li>
+                    <label for="u_mail">이메일</label>
+                    <input type="email" id="u_mail" name="u_mail" >                                 
+                </li>
+                <li>
+                    <label for="u_num"> 숫자입력</label>
+                    <input type="number" id="u_num" name="u_name" min="5" max="500" step="5" value="5">
+                </li>
+                <li>
+                    <label for="u_slide"> 슬라이드모양</label>
+                    <input type="range" id="u_slide" name="u_slide" min="5" max="100" step="10" value="10">
+                </li>
+                <li>
+                    <label for="u_color">색상선택</label>
+                    <input type="color" id="u_color" value="#00ff00">
+                </li>
+                <li>
+                    <label for="u_datetime">년월일시간</label>
+                    <input type="datetime-local" id="u_datetime" name="u_datetime">
+                </li>
+                <li>
+                    <label for="u_date">년월일</label>
+                    <input type="date" id="u_date" name="u_date"> 
+                </li>
+                <li>
+                    <label for="u_month">년월</label>
+                    <input type="month" id="u_month" name="u_month">
+                </li>
+                <li>
+                    <label for="u_week">년주</label>
+                    <input type="week" id="u_week" name="u_week">
+                </li>
+                <li>
+                    <label for="u_file">파일전송</label>
+                    <input type="file" id="u_file" name="u_file">
+                </li>
+                <li>
+                    <label for="u_image">사진전송</label>
+                    <input type="image" id="u_image" name="u_image" src="img/강아지8.jpg">
+                </li>
+                <li>
+                    <label for="u_btn">버튼</label>
+                    <input type="button" id="u_btn" name="u_btn" value="새창열기" onclick="window.open()">
+                </li>
+
+                <li>
+                    <label for="u_btn">버튼</label>
+                    <button type="button" id="u_btn" name="u_btn" value="새창열기" onclick="window.open()">
+                </li>
+
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>선택</legend>
+            <ul>
+                <li>
+                    <label><input type="radio" name="grade" value="basic">기본</label>
+                    <label><input type="radio" name="grade" value="muddle" checked>중급</label>
+                    <label><input type="radio" name="grade" value="high">고급</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="color1" value="red" checked>빨강</label>
+                    <label><input type="checkbox" name="color2" value="green">초록</label>
+                    <label><input type="checkbox" name="color3" value="blue">파랑</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </fieldset>
+
+      
+
+
+    </form>
+    
+</body>
+</html>

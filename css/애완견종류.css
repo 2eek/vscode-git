@@ -1,0 +1,108 @@
+#act{
+    background-image: url(img/강아지사진.jpg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/*  body{
+    background: url(img/강아지8.jpg) no-repeat center fixed;
+    background-size: 300px;
+} */
+#container{
+    width: 900px;
+    margin: 0 auto;
+}
+nav{
+    background-color: rgb(150, 216, 167);
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul{
+    list-style: none;
+    margin-bottom:0 ;
+    
+}
+nav ul li {
+    display:inline-block;
+    padding: 10px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+section{
+    border: 1px solid #777;
+    padding:20px;
+}
+section ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+section ul li {
+ 
+    display:inline-block;
+    margin: 10px;
+}
+
+section a{
+    
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article{
+    padding:10px;
+}
+
+#pet1{
+    border:1px solid #f0f;
+    border-radius: 5px;
+}
+
+#pet2{
+    border:2px dotted rgb(72, 177, 73);
+    border-radius: 10px;
+}
+
+#pet3{
+    border:2px dashed #f0f;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+ 
+}
+
+section >p {
+    text-align: right;
+    margin-right: 20px;
+}
+
+figure{
+    text-align: center;
+}
+
+aside{
+    background-color: pink;
+    padding:10px;
+}
+footer{
+    background-color: rgb(150, 216, 167);
+    padding: 10px;
+    color:#fff;
+    font-size: 20px;
+    text-align:center;
+    font-weight:bold;
+    font-style: italic;
+}

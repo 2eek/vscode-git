@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지셔닝</title>
+    <style>
+
+.fnone{
+    /* float: none; */
+    clear: both;
+ }
+
+div{
+
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.conbox{
+    box-sizing: content-box;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+
+.borbox{
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #000;
+    position: relative;
+    top:-50px; 
+    left: 100px;
+}
+
+
+.fnone{
+    /* float: none; */
+    clear: both;
+ }
+
+ .fleft{
+    float: left;
+    background-color: red;
+    width: 200px;
+ }
+
+ .fright{
+    float: right;
+   
+    width: 200px;
+ }
+
+
+
+ .fclear{
+    clear:both;
+    width: 500px;
+    height: 300px;
+    position: relative;
+ }
+
+ div>p{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    margin:5px 0;
+    font-size: 16px;
+    line-height: 50px;
+    position: absolute;
+ }
+/* .b1{
+    top:0;
+    left:0;
+}
+
+.b2{
+    top:0;
+    right:0;
+}
+.b3{
+    left:0;
+    bottom:0;
+}
+.b4{
+    right:0;
+    bottom:0;
+}
+
+.b5{
+    top:120px;
+    left:200px;
+}
+ */
+h2{
+    width:100px;
+    height:50px;
+    background-color: blueviolet;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.hidden{
+  /*   visibility: hidden; */
+  /* opacity:0.3; */
+  display:none;
+}
+
+.b1{
+    z-index: 999;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conbox">content-box</div>
+    <div class="borbox">border-box</div>
+    <div class="fleft">float:left</div>
+    <div class="fright">float:right</div> 
+    <div class="fnone">float:none</div> 
+    <div class="fclear">
+        <p class="b1">box1</p>
+        <p class="b2">box2</p>
+        <p class="b3">box3</p>
+        <p class="b4">box4</p>
+        <p class="b5">box5</p>
+    </div>
+
+    <h2>fixed</h2>
+    <img src="img/강아지5.jpg" alt="강아지">
+    <img src="img/강아지6.jpg" alt="강아지" class="hidden">
+    <img src="img/강아지7.jpg" alt="강아지">
+
+
+</body>
+</html>

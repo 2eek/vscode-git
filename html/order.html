@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오더</title>
+    <style>
+        #container{
+           width: 500px;
+            margin: 0 auto;
+        }
+
+        .inform label{
+            width: 110px;
+            float: left;
+            font-weight:bold ; 
+        }
+         
+        legend{
+           font-weight: bold;
+        }
+        
+        form ul{
+            list-style: none;
+        }
+
+        form li{
+            margin-bottom: 10px;
+        }
+
+        input{
+            padding: 3px;
+        }
+
+    
+        .sub{
+            text-align: center;
+            border: none;
+        }
+
+        legend{
+            color: rgb(140, 22, 67);
+            
+        }
+        fieldset{
+           margin: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <h1>상품주문서</h1>
+        <form action="order.jsp" method="post" name="login">
+            <fieldset class="inform"> 
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="u_name">이름 </label>
+                        <input type="text" id="u_name" name="u_name" placeholder="여백없이 입력"  >
+                    </li>
+                    <li>
+                        <label for="u_tel">연락처 </label>
+                        <input type="tel" id="u_tel" name="u_tel" placeholder="연락가능한 번호">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="inform">
+                <legend>배송지 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="u_adress">주소 </label>
+                            <input type="text" id="u_adress" name="u_adress" autofocus size="29px">
+                        </li>
+                        <li>
+                            <label for="u_tel">전화번호 </label>
+                            <input type="tel" id="u_tel" name="u_tel" >
+                        </li>
+                        <li>
+                            <label for="t_area">메모</label>
+                            <textarea cols="30" rows="5" id="t_area" name="t_area" ></textarea>
+                        </li>
+                    </ul>
+            </fieldset>     
+         
+
+            <fieldset> 
+                <legend>주문 정보</legend>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox" name="cham" value="cham" checked>경북성주 참외(5kg)</label>
+                                <input type="number" id="u_cham" name="u_cham" min="5" max="10" value="0">
+                                <label for="u_cham">box</label>
+                            </li>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="po" value="po">경북영천 포도(5kg)</label>
+                            <input type="number" id="u_su" name="u_su" min="5" max="10" value="0">
+                                <label for="u_su">box</label>
+                        <li>
+                        <li>
+                            <label><input type="checkbox" name="su" value="su">경북봉화 수박(5kg)</label>
+                            <input type="number" id="su" name="su" min="5" max="10" value="0">
+                                <label for="u_po">box</label>
+                        </li>
+                    </ul>
+            </fieldset>
+
+       <fieldset class="sub">
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시 작성">
+        </fieldset>
+
+        </form>
+    </div>
+</body>
+</html>

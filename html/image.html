@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf=8">
+        <title>이미지</title>
+        <style> 
+       /*  img {
+            width: 200px;
+            height: 200px;
+        } */
+       
+        </style>
+    </head>
+
+    <body>
+        
+        <h3><a href="https://www.naver.com" target="_blank" title="네이버로 이동">이미지 넣기</a></h3>
+        <img src="img/강아지사진.jpg" alt="강아지" usemap="#umap" >
+
+        
+    <!-- <a href="table.html" target="_blank">
+        <img src="img/강아지사진.jpg" alt="강아지"  width="200" hight="400" title="강아지" ></a> -->
+
+    <figure><!-- 한 덩어리 -->
+        <img src="img/강아지사진.jpg" alt="강아지"  title="강아지1" >
+        <img src="img/강아지사진.jpg" alt="강아지"  title="강아지2" >
+        <img src="img/강아지사진.jpg" alt="강아지"  title="강아지3" >
+        <figcaption> 강아지입니다</figcaption>
+    </figure>
+    <h2> 이미지 맵 만들기</h2>
+    <img src="img/강아지사진.jpg"usemap="#umap" alt="umap이미지" id="umap">
+    <map name="umap">
+        <area shape="circle" coords="111, 258, 60" href="https://www.naver.com" target="_blank">   </map>
+    
+       
+    
+    
+    </body>
+</html>

@@ -1,0 +1,61 @@
+#container{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+img{
+    
+    float:right;
+    margin: 10px;
+}
+
+header{
+    background-color: rgb(135, 177, 214);
+    overflow: hidden;
+}
+
+header h1{
+
+    float:left;
+}
+
+/* nav ul li{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    float:right;
+} */
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+
+
+
+ul {
+   
+
+   
+}
+
+ul li{
+
+
+}
+
+section{
+   
+    background-color: rgb(198, 213, 227);
+}
+
+
+section ul{
+    
+}
+
+section ol{
+    
+}

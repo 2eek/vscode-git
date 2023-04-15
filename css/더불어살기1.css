@@ -1,0 +1,70 @@
+#container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+img{
+    width: 300px;
+    height: 460px;
+    float:right;
+  
+    margin: 10px 10px 20px;
+}
+
+header{
+    background-color: rgb(60, 122, 180);
+    border: solid #244053 2px;
+    border-bottom: 0;
+    overflow: hidden;
+}
+
+header h1{
+    padding: 6px;
+    float:left;
+    color: aliceblue;
+}
+
+header nav{
+   margin-top:10px ;
+    width: 40%;
+    float: right;
+}
+
+nav ul{
+    font-weight: bolder;
+    list-style: none;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 12px;
+    float:left;
+} 
+
+section{
+    border: solid #244053 2px;
+    border-bottom: 0;
+    border-top: 0;
+    background-color: rgb(198, 213, 227);
+}
+
+article{ 
+    padding: 30px;
+}
+
+section ul li{ padding: 10px;
+    list-style-type:square;
+}
+
+
+footer{
+    font-weight: bolder;
+    border: solid #244053 2px;
+    border-top: 0;
+    background-color: rgb(60, 122, 180);
+    text-align: center;
+    padding: 10px;
+    
+}

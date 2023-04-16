@@ -8,7 +8,7 @@
     <style>
 
         #container{
-            width: 500px;
+            width: 550px;
            border: 1px solid #000;
             padding: 30px;
             margin: 0 auto; 
@@ -17,15 +17,17 @@
         legend{
             color: blueviolet;
             font-weight: bold;
+            margin: 0;
         }
 
         .inform{
-            width: 70px;
+            width: 60px;
             float: left;
         }
 
-         fieldset ul {
+         fieldset ul{
             list-style: none;
+            margin: 0;
          }
          
          fieldset li{
@@ -36,7 +38,6 @@
             border: none;
          }
 
-
     input:checked+span{
         color:blue;
     }
@@ -46,9 +47,9 @@
 <body>  
      <div id="container">
         <h1>국제 개발자 지원서</h1>
-            <p>HTML, CSS, javascript에 대한 기술적 이해와 겸험이 있는 분을 찾습니다.</p>
-            <hr>
-         <form action="login.jsp" method="post" name="login">
+            <p>HTML, CSS, javascript에 대한 기술적 이해와 겸험이 있는 분을 찾습니다.</p> <hr>
+           
+            <form action="login.jsp" method="post" name="login">
 
         
 
@@ -71,23 +72,25 @@
                 <legend>지원분야</legend>
                 <ul>
                     <li>
-                        <label></label><input type="radio" name="grade" value="basic"><span>웹 퍼블리싱</span></label>
+                        <label><input type="radio" name="grade" value="job"><span>웹 퍼블리싱</span></label>
                     </li>
                     <li>
-                        <label><input type="radio" name="grade" value="muddle" checked><span>웹 애플리케이션 개발</span></label>
+                        <label><input type="radio" name="grade" value="job" checked><span>웹 애플리케이션 개발</span></label>
                     </li>
                     <li>
-                        <label><input type="radio" name="grade" value="high"><span>개발 환경 개선</span></label>
+                        <label><input type="radio" name="grade" value="job"><span>개발 환경 개선</span></label>
                     </li>
                 </ul>
             </fieldset>
 
             <fieldset>
-                <legend>지원 동기</legend>
-                <li>
-                    <label for="t_area"></label>
-                    <textarea cols="60" rows="5" id="t_area" name="t_area" placeholder="지원 동기 간략히 써 주세요" ></textarea>
-                </li>
+                <legend ><label for="t_area">지원 동기</label></legend>
+                <ul>
+                    <li>
+                       
+                        <textarea cols="60" rows="5" id="t_area" name="t_area" placeholder="지원 동기 간략히 써 주세요" ></textarea>
+                    </li>
+                </ul>
             </fieldset>
 
             <fieldset>

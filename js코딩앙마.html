@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 코딩앙마 https://www.youtube.com/watch?v=KF6t61yuPCY
+/*         let name="mike"; */
+        //let name="google"; //->  에러나옴 (주의 역할)-> 이때 let 생략하고 그냥 name="google"; 하면 수정 됨
+  /*       name="google";
+        console.log(name);
+        const PI=3.14; //대문자로 선언하는게 좋다.
+
+        const x= 1/0;
+        console.log(x)// Infinity
+
+        const y= name/2;
+        console.log(y) //NaN
+        
+        const name1 ="Mike";
+        console.log(typeof 3);  //number
+        console.log(typeof name); //string
+        console.log(typeof true);//boolean
+        console.log(typeof" xxx");//string
+        console.log(typeof null);//object  사실 null은 객체 아님...js의 오류임 
+        console.log(typeof undefined);//undefined
+
+        const name2="Mike";
+        const message=`My name is ${name2}`;
+      
+        const message2="My name is ${name2}";// 변수명이 그대로 노출됨
+        console.log(message)
+        console.log(message2)
+
+        const name3 ='Mike';
+
+        const a="나는";
+        const b="입니다.";
+
+        console.log(a+ name3+ b);
+
+        const age= 30; //number
+        console.log(a+ age+ "살"+b); */
+
+        //alert 알려줌. 어럴트
+        //prompt 입력받음
+        //confirm 확인 받음
+
+       /*  const name4= prompt("이름을 입력하세요.");
+        alert("환영합니다, "+name4 + "님");
+
+        const name5=prompt("예약일을 입력해주세요.","2020-10-");
+        console.log(name5); */
+
+        //confirm
+        /* const isAdult = confirm("당신은 성인 입니까?");
+        console.log(isAdult) */// 확인하면 console창에 true뜸. ex)결제 하시겠습니까? 정막 삭제 하시겠습니까?
+        
+        // String() 문자형으로 변환
+        // Number() 숫자형으로 변환
+        // Boolean() 불린형으로 변환 
+/* 
+        const mathScore = prompt("수학 몇점?");
+        const engScore = prompt("영어 몇점?");
+        const result= (mathScore+ engScore) /2;
+        console.log(result); */
+        //prompt로 입력 받은 숫자는 무조건 문자형이다.
+       /*  90을 넣으면 "90" 인 것.
+        "90"+"80"="9080"임  //자동 형변환.
+        "9080"/2= 4540임.
+        "6"/"2" =3임*/
+  /*       console.log( Number("1234"))// 1234
+        console.log( Number("1234dasdasd"))//NaN
+        console.log( Number(true))// 1
+        console.log( Number(false))// 0
+
+
+
+
+ console.log(String(3),String(true),String(false),String(null),String(undefined),String(),)
+         */
+/* 
+         console.log( Boolean(0), Boolean(""),Boolean( null) , Boolean(NaN))  //false
+        
+         console.log
+       
+         console.log( Number(null)) //0
+         console.log( Number(undefined)) // NaN
+         Number(0) //false
+         Number('0') //true
+         Number('') //false
+         Number(' ') //true
+        //  %: 나머지를 구하시오
+        //  ** 거듭제곱
+
+         //성능최적화. and연산에서 확률 제일 적은 항목을 제일 앞에 배치해서 뛰까지 판별 안하도록 한다. 미리 거르게. 칸이 작은 체로 미리  거르기
+        
+        const age= prompt('나이가..?');
+        const isAdult= age> 19;
+        if (!isAdult){
+            console.log('돌아가..');
+        }
+ */
+
+   /*      const gender ="F";
+        const name ="Jane";
+        const isAdult = true;
+   
+        if(gender === 'M' &&(name === "Mike" || isAdult)){// &&가 ||보다 우선순위가 높아서 먼저 평가됨 isAdult때문에 항상  true 
+            console.log("통과")
+        } else {
+            console.log("돌아가. ")
+        }
+
+        for(let i=0; i< 10; i++){
+            console.loㅎ(i)   
+        }
+
+        //while
+        let i=0;
+
+        while(i<10){
+            console.log('i')
+            i++;
+        }
+
+        let k=0;
+        do{
+            //코드
+            k++;
+        }while(k<10)
+
+        while(true){
+            let answer =confirm('계속 할까요?');
+            if(!answer){
+                break; // break 만날때 까지 반복됨. 취소 누르면 answer에 false가 들어감 
+            }
+        }
+/* 
+/*        // for(let i=0;/* 1.초기값 지정 */ //i<10;/* 2.조건 */ i++/* 코드 실행 후 4.작업  *///){ //초기값을 지정하고 조건이 true면 코드 실행하고 
+           /*  if(i%2){//3.코드 실행 */
+                //continue;
+           ///}
+      //      console.log(i)
+        //}
+         
+
+        //for(let i=0; i<10; i++){  
+           // if(i%2){ continue;}console.log(i)} //i= 0일 때 if()안에 몫 0 이므로 console.log에 0 들어가서 0출력 됨.= 2의 배수인 경우 나머지 0이므로 2의 배수가 출력됨 */
+                                                //i= 1일 때  if문 밖으로 안나가므로. i++으로 올라감.  */ */
+
+    //명확한 횟수가 정해져있으면 for문을. 안정해 있으면 while을 사용!
+/* 
+    swich는 if else로 대체 됨.
+    if{
+
+    }else if{
+         
+    }*/
+
+/* 
+    let fruit = prompt('무슨 과일을 사고 싶나요?');
+
+    switch(fruit){
+    case '사과' :
+        console.log("100원 입니다.");
+        break;
+    case '바나나' :
+        console.log("200원 입니다.");
+        break;
+    case '키위' :
+        console.log("300원 입니다.");
+        break;
+    case '멜론' :
+        console.log("400원 입니다.");
+        break;
+    case '수박' :
+        console.log("500원 입니다.");
+        break;
+    default:
+        console.log("그런 과일은 없습니다.");
+    
+    } */
+
+    //함수 console, confirm, alert 
+
+/*  
+    function sayHello(name){
+        console.log(`Hello,${name}`);
+    }
+ */
+
+    function showError(){
+        alert("에러가 발생했습니다. 다시 시도해주세요.");
+    }
+    showError()
+
+
+   //  if(undefined){} -> false
+        </script>
+</body>
+</html>
